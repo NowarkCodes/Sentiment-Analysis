@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Instagram Sentiment Analysis</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .post { margin-bottom: 20px; padding: 10px; border: 1px solid #ddd; }
+    </style>
+</head>
+<body>
+    <h1>Instagram Sentiment Analysis</h1>
+    {% for post in posts %}
+        <div class="post">
+            <p><strong>Post:</strong> {{ post.caption }}</p>
+            <p><strong>Sentiment:</strong> {{ post.sentiment }}</p>
+        </div>
+    {% endfor %}
+</body>
+</html>
